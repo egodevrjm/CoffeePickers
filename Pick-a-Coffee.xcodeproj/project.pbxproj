@@ -7,21 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		70519CEC1F5E0F7A0035682F /* UIColor+Colorhistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70519CEB1F5E0F7A0035682F /* UIColor+Colorhistory.swift */; };
 		70E10C381F5C88D70085A1C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E10C371F5C88D70085A1C9 /* AppDelegate.swift */; };
 		70E10C3A1F5C88D70085A1C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E10C391F5C88D70085A1C9 /* ViewController.swift */; };
 		70E10C3D1F5C88D70085A1C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70E10C3B1F5C88D70085A1C9 /* Main.storyboard */; };
 		70E10C3F1F5C88D70085A1C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70E10C3E1F5C88D70085A1C9 /* Assets.xcassets */; };
 		70E10C421F5C88D70085A1C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70E10C401F5C88D70085A1C9 /* LaunchScreen.storyboard */; };
+		70E10C4A1F5C8B7C0085A1C9 /* Arrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E10C491F5C8B7C0085A1C9 /* Arrays.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		70E10C341F5C88D70085A1C9 /* CoffeePickers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeePickers.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		70519CEB1F5E0F7A0035682F /* UIColor+Colorhistory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Colorhistory.swift"; sourceTree = "<group>"; };
+		70E10C341F5C88D70085A1C9 /* Pick-a-Coffee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pick-a-Coffee.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70E10C371F5C88D70085A1C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70E10C391F5C88D70085A1C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		70E10C3C1F5C88D70085A1C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		70E10C3E1F5C88D70085A1C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		70E10C411F5C88D70085A1C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		70E10C431F5C88D70085A1C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70E10C491F5C8B7C0085A1C9 /* Arrays.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Arrays.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +50,7 @@
 		70E10C351F5C88D70085A1C9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				70E10C341F5C88D70085A1C9 /* CoffeePickers.app */,
+				70E10C341F5C88D70085A1C9 /* Pick-a-Coffee.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,7 +60,9 @@
 			children = (
 				70E10C371F5C88D70085A1C9 /* AppDelegate.swift */,
 				70E10C391F5C88D70085A1C9 /* ViewController.swift */,
+				70519CEB1F5E0F7A0035682F /* UIColor+Colorhistory.swift */,
 				70E10C3B1F5C88D70085A1C9 /* Main.storyboard */,
+				70E10C491F5C8B7C0085A1C9 /* Arrays.swift */,
 				70E10C3E1F5C88D70085A1C9 /* Assets.xcassets */,
 				70E10C401F5C88D70085A1C9 /* LaunchScreen.storyboard */,
 				70E10C431F5C88D70085A1C9 /* Info.plist */,
@@ -67,9 +73,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		70E10C331F5C88D70085A1C9 /* CoffeePickers */ = {
+		70E10C331F5C88D70085A1C9 /* Pick-a-Coffee */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 70E10C461F5C88D70085A1C9 /* Build configuration list for PBXNativeTarget "CoffeePickers" */;
+			buildConfigurationList = 70E10C461F5C88D70085A1C9 /* Build configuration list for PBXNativeTarget "Pick-a-Coffee" */;
 			buildPhases = (
 				70E10C301F5C88D70085A1C9 /* Sources */,
 				70E10C311F5C88D70085A1C9 /* Frameworks */,
@@ -79,9 +85,9 @@
 			);
 			dependencies = (
 			);
-			name = CoffeePickers;
+			name = "Pick-a-Coffee";
 			productName = CoffeePickers;
-			productReference = 70E10C341F5C88D70085A1C9 /* CoffeePickers.app */;
+			productReference = 70E10C341F5C88D70085A1C9 /* Pick-a-Coffee.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -101,7 +107,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 70E10C2F1F5C88D70085A1C9 /* Build configuration list for PBXProject "CoffeePickers" */;
+			buildConfigurationList = 70E10C2F1F5C88D70085A1C9 /* Build configuration list for PBXProject "Pick-a-Coffee" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -114,7 +120,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				70E10C331F5C88D70085A1C9 /* CoffeePickers */,
+				70E10C331F5C88D70085A1C9 /* Pick-a-Coffee */,
 			);
 		};
 /* End PBXProject section */
@@ -139,6 +145,8 @@
 			files = (
 				70E10C3A1F5C88D70085A1C9 /* ViewController.swift in Sources */,
 				70E10C381F5C88D70085A1C9 /* AppDelegate.swift in Sources */,
+				70519CEC1F5E0F7A0035682F /* UIColor+Colorhistory.swift in Sources */,
+				70E10C4A1F5C8B7C0085A1C9 /* Arrays.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,11 +268,11 @@
 		70E10C471F5C88D70085A1C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				DEVELOPMENT_TEAM = 895Q7MTPTC;
 				INFOPLIST_FILE = CoffeePickers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = uk.egodev.CoffeePickers;
+				PRODUCT_BUNDLE_IDENTIFIER = uk.egodev.CoffeePicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -273,11 +281,11 @@
 		70E10C481F5C88D70085A1C9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				DEVELOPMENT_TEAM = 895Q7MTPTC;
 				INFOPLIST_FILE = CoffeePickers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = uk.egodev.CoffeePickers;
+				PRODUCT_BUNDLE_IDENTIFIER = uk.egodev.CoffeePicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -286,7 +294,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		70E10C2F1F5C88D70085A1C9 /* Build configuration list for PBXProject "CoffeePickers" */ = {
+		70E10C2F1F5C88D70085A1C9 /* Build configuration list for PBXProject "Pick-a-Coffee" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				70E10C441F5C88D70085A1C9 /* Debug */,
@@ -295,13 +303,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		70E10C461F5C88D70085A1C9 /* Build configuration list for PBXNativeTarget "CoffeePickers" */ = {
+		70E10C461F5C88D70085A1C9 /* Build configuration list for PBXNativeTarget "Pick-a-Coffee" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				70E10C471F5C88D70085A1C9 /* Debug */,
 				70E10C481F5C88D70085A1C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

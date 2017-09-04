@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Pick_a_Coffee" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,100 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.14999999999999999" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coffee" translatesAutoresizingMaskIntoConstraints="NO" id="ngm-zK-ZnN">
+                                <rect key="frame" x="0.0" y="75" width="375" height="460"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick a Coffee" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kzU-QI-3dp">
+                                <rect key="frame" x="16" y="28" width="343" height="136"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="53"/>
+                                <color key="textColor" red="0.24859216370000001" green="0.14019263139999999" blue="0.027896302460000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z4b-gl-cs1">
+                                <rect key="frame" x="16" y="165" width="343" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="XUw-pd-mbh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="72"/>
+                                <color key="textColor" red="0.87439917449893501" green="1" blue="0.74104507923130103" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cw6-hT-y6l">
+                                <rect key="frame" x="16" y="293" width="343" height="79"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="79" id="AOX-Fs-Wok"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="63"/>
+                                <color key="textColor" red="0.87439917450000004" green="1" blue="0.74104507919999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MHY-gB-fYx">
+                                <rect key="frame" x="16" y="440" width="343" height="82"/>
+                                <color key="backgroundColor" red="1" green="0.87613995035982395" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="82" id="CWT-nY-DxT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <state key="normal" title="Pick Your Coffee">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnPickerAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D8A-0s-fE7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ElW-9E-zIF">
+                                <rect key="frame" x="16" y="530" width="343" height="53"/>
+                                <color key="backgroundColor" red="1" green="0.87294352054595947" blue="0.0035249518696218729" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="4Kq-m8-m54"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <state key="normal" title="Add An Extra">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnExtrasAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ou9-lN-xow"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1898402572" green="0.78381210570000004" blue="0.14577350019999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ngm-zK-ZnN" firstAttribute="centerX" secondItem="cw6-hT-y6l" secondAttribute="centerX" id="5Wc-Ey-uU9"/>
+                            <constraint firstAttribute="trailing" secondItem="ngm-zK-ZnN" secondAttribute="trailing" id="85A-jK-dyC"/>
+                            <constraint firstItem="MHY-gB-fYx" firstAttribute="top" secondItem="cw6-hT-y6l" secondAttribute="bottom" constant="68" id="C5P-ep-2Gv"/>
+                            <constraint firstItem="cw6-hT-y6l" firstAttribute="top" secondItem="z4b-gl-cs1" secondAttribute="bottom" constant="8" symbolic="YES" id="Oej-K0-Uy1"/>
+                            <constraint firstItem="kzU-QI-3dp" firstAttribute="trailing" secondItem="z4b-gl-cs1" secondAttribute="trailing" id="S85-M3-5cM"/>
+                            <constraint firstItem="ngm-zK-ZnN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="55" id="Vi7-yT-qjf"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ElW-9E-zIF" secondAttribute="bottom" constant="84" id="WIu-ej-om8"/>
+                            <constraint firstItem="z4b-gl-cs1" firstAttribute="trailing" secondItem="cw6-hT-y6l" secondAttribute="trailing" id="WbS-uM-lc8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ngm-zK-ZnN" secondAttribute="bottom" constant="132" id="dJz-Dl-j5x"/>
+                            <constraint firstItem="kzU-QI-3dp" firstAttribute="leading" secondItem="z4b-gl-cs1" secondAttribute="leading" id="fGW-Rv-WP5"/>
+                            <constraint firstItem="z4b-gl-cs1" firstAttribute="leading" secondItem="cw6-hT-y6l" secondAttribute="leading" id="fX8-O3-9Tz"/>
+                            <constraint firstItem="ElW-9E-zIF" firstAttribute="top" secondItem="MHY-gB-fYx" secondAttribute="bottom" constant="8" symbolic="YES" id="tje-sr-COn"/>
+                            <constraint firstItem="MHY-gB-fYx" firstAttribute="trailing" secondItem="ElW-9E-zIF" secondAttribute="trailing" id="u1z-Jp-bN2"/>
+                            <constraint firstItem="z4b-gl-cs1" firstAttribute="top" secondItem="kzU-QI-3dp" secondAttribute="bottom" constant="1" id="uNt-B7-luu"/>
+                            <constraint firstItem="MHY-gB-fYx" firstAttribute="leading" secondItem="ElW-9E-zIF" secondAttribute="leading" id="vAd-RM-C3S"/>
+                            <constraint firstItem="kzU-QI-3dp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="vVR-ia-JOg"/>
+                            <constraint firstItem="ngm-zK-ZnN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vuZ-MJ-c0C"/>
+                            <constraint firstItem="cw6-hT-y6l" firstAttribute="leading" secondItem="MHY-gB-fYx" secondAttribute="leading" id="wIs-MC-EjW"/>
+                            <constraint firstItem="kzU-QI-3dp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="xyd-u3-utf"/>
+                            <constraint firstItem="cw6-hT-y6l" firstAttribute="trailing" secondItem="MHY-gB-fYx" secondAttribute="trailing" id="yKb-9n-cI3"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnExtras" destination="ElW-9E-zIF" id="pOt-8j-FYd"/>
+                        <outlet property="btnPicker" destination="MHY-gB-fYx" id="9Jd-iR-ElV"/>
+                        <outlet property="lblCoffee" destination="z4b-gl-cs1" id="Qf5-Hi-dPg"/>
+                        <outlet property="lblExtras" destination="cw6-hT-y6l" id="Ljz-Bt-gNg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="coffee" width="1600" height="1600"/>
+    </resources>
 </document>
